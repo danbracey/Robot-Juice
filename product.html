@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Robot Juice</title>
+    <!--Import stylesheets -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Google Fonts stylesheet with the correct font-family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iceberg">
+    <!--Import jQuery first, then import reviews.js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="reviews.js"></script>
+</head>
+<body>
+<main>
+    <header>
+        <div class="logo"><!-- Logo -->
+            <span id="robot">Robot</span> <span id="juice">Juice</span>
+            <p id="logo_tagline">fictitious cycle lubricants</p>
+        </div>
+    </header>
+    <nav><!-- Main Navigation -->
+        <a href="index.html">Home</a>
+        <a href="product.html" class="active">Products</a>
+        <a href="#">Protect</a>
+        <a href="#">Stockist's</a>
+        <a href="#">Events</a>
+        <a href="#">Reviews</a>
+    </nav>
+    <section id="product_information"><!-- Three-Column Grid -->
+        <section id="product_images">
+            <img src="images/prod-thumb1.jpg" alt="Bike Oil Product Placement"/>
+            <img src="images/prod-thumb2.jpg" alt="Bike Chain"/>
+            <img src="images/prod-thumb3.jpg" alt="Bike Oil Spill"/>
+        </section>
+        <section id="product_selected_image">
+            <!-- Height and Width defined in CSS -->
+            <img src="images/robotjuicebikeoil.jpg" alt="Bike Oil Product Placement"/>
+        </section>
+        <section id="product_description">
+            <h2>Bike Oil</h2>
+            <strong class="price">£99.99</strong>
+            <section class="product_options"><!-- Uses a two-column grid to display both drop-down menus -->
+                <select>
+                    <option name="Size">Size</option>
+                </select>
+                <select>
+                    <option name="Qty">Qty</option>
+                </select>
+            </section>
+            <button class="buy_now_btn">Buy Now</button>
+            <p class="social">
+                Find nearest stockist<br>
+                Share <img src="images/facebook.jpg" height="11" width="11" /><img src="images/twitter.jpg" height="11" width="12" /><img src="images/email.jpg" height="11" width="11" />
+            </p>
+            <p>
+                Robot Juice bike oil for bicycles stops rust and other corrosion from starting.
+                Applied to already corroding metals it breaks down the corrosion and starts preventing it from
+                building up and protects from the point of contact.
+            </p>
+        </section>
+    </section>
+    <section id="similar_products">
+        <h2>Similar Products</h2>
+        <aside>
+            <!-- Height and width of these images determined in CSS -->
+            <img src="images/simprod.jpg" alt="Similar Product 1"/>
+            <img src="images/simprod.jpg" alt="Similar Product 2"/>
+            <img src="images/simprod.jpg" alt="Similar Product 3"/>
+            <img src="images/simprod.jpg" alt="Similar Product 4"/>
+            <img src="images/simprod.jpg" alt="Similar Product 5"/>
+            <img src="images/simprod.jpg" alt="Similar Product 6"/>
+        </aside>
+    </section>
+    <section id="reviews">
+        <h2>Product Reviews <span class='total_rating'><span class='rating'>*****</span></span></h2>
+        <hr>
+        <section id="load_reviews">
+            <!-- Placeholder for reviews loaded via JavaScript -->
+        </section>
+    </section>
+</main>
+<footer>
+    <section id="white"><!-- White background of footer -->
+        <img id="cycle_magazine" src="images/cyclemagazine.jpg" alt="Cycling Magazine">
+        <section id="footer_latest_reviews">
+            <h5 class="footer_heading">Latest Reviews</h5>
+            <p>Cycling magazine has given Robot Juice a 5-star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubes</p>
+        </section>
+        <section id="footer_links_white">
+            <h5 class="footer_heading">Links</h5>
+            <ul>
+                <li><a href="#">Edge Hill University</a></li>
+                <li><a href="#">Dave Walsh</a></li>
+                <li><a href="https://twitter.com/walsh_d">https://twitter.com/walsh_d</a></li>
+                <li><a href="#">CIS1110 - Web Design and Development module</a></li>
+            </ul>
+        </section>
+    </section>
+    <section id="red" class="background_red"><!-- Red section of footer -->
+        <section id="contact_information">
+            <!-- Use the HTML Entity &frac34; to produce the fraction. -->
+            <p>Robot Juice Fictitious Products Not Ltd., Unit 9&frac34;, Privet Drive, Little Whingeing, Surrey DN18 5RP</p>
+            <p>Telephone: +44 (0)1695 657648. Email: 24969761@edgehill.ac.uk</p>
+        </section>
+        <section id="footer_links_red">
+            <ul><!-- Pipe inserted by CSS after each list item -->
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+            <p>Copyright 2021 Dan Bracey. Design by Dave Walsh</p>
+        </section>
+    </section>
+</footer>
+</body>
+</html>
